@@ -10,13 +10,13 @@ class MainClass
         double secondOperand = 0;
         string operation = "";
 
-        Console.WriteLine("first operand: ");
+        Console.Write("first operand: ");
         firstOperand = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine("second operand: ");
+        Console.Write("second operand: ");
         secondOperand = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine("which operation you choose (add, sub, multi, div, mod): ");
+        Console.Write("which operation you choose (add, sub, multi, div, mod): ");
         operation = Console.ReadLine();
 
         switch(operation)
@@ -37,6 +37,7 @@ class MainClass
                 Modulo((int)firstOperand, (int)secondOperand);
                 break;
             default:
+                Console.WriteLine("Unknown operation " + operation);
                 break;
         }
     }
@@ -60,7 +61,7 @@ class MainClass
     {
         if(y == 0)
         {
-            Console.WriteLine("Pas diviseur égale 0 petit malin");
+            Console.WriteLine("Pas de diviseur égale à 0 petit malin");
         }
         else
         {
@@ -72,7 +73,7 @@ class MainClass
     {
         if (y == 0)
         {
-            Console.WriteLine("Pas diviseur égale 0 petit malin");
+            Console.WriteLine("Pas de diviseur égale à 0 petit malin");
         }
         else
         {
